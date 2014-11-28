@@ -1,11 +1,18 @@
 <footer class="footer--main">
-  <ul class="member-list">
+  <ul class="list list--member">
     {% for member in site.github.organization_members %}
-      <li class="member-list-entry">
-        <a class="member-list-link" href="{{ member.html_url }}">
-          <img class="member-list-image" src="{{ member.avatar_url}}" alt="{{ member.login }}">
+      <li class="list-entry">
+        <a class="list-link" href="{{ member.html_url }}">
+          <img class="list-image" src="{{ member.avatar_url}}" alt="{{ member.login }}" />
         </a>
       </li>
   {% endfor %}
+  </ul>
+  <ul class="list list--owner">
+    <li class="list-entry">
+      <a class="list-link" href="{{ site.github.owner_url }}">
+        <img class="list-image" href="{{ site.github.owner_gravatar_url }}" alt="{{ site.github.owner_name }}" />
+      </a>
+    </li>
   </ul>
 </footer>
