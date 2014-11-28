@@ -5,7 +5,7 @@ pure message zen
 ```bash
 [sudo] gem install bundler #if not already installed
 bundle install
-bundle exec jekyll serve --baseurl '' [--port <PORT>]
+bundle exec jekyll serve [--port <PORT>]
 ```
 
 For complete documentation and how it works, check out [Jekyll](http://jekyllrb.com/docs/home/)
