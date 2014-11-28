@@ -2,7 +2,7 @@
   <ul class="list list--member">
     {% for member in site.github.organization_members %}
       <li class="list-entry">
-        <a class="list-link" href="{{ member.html_url }}">
+        <a class="list-link" href="{{ member.html_url }}" targe="_blank">
           <img class="list-image" src="{{ member.avatar_url}}" alt="{{ member.login }}" />
         </a>
       </li>
@@ -10,8 +10,8 @@
   </ul>
   <ul class="list list--owner">
     <li class="list-entry">
-      <a class="list-link" href="{{ site.github.owner_url }}">
-        <img class="list-image" href="{{ site.github.owner_gravatar_url }}" alt="{{ site.github.owner_name }}" />
+      <a class="list-link" href="{{ site.github.owner_url }}" targe="_blank">
+        <img class="list-image" href="https://avatars2.githubusercontent.com/u/8971563?v=3" alt="{{ site.github.owner_name }}" />
       </a>
     </li>
   </ul>
