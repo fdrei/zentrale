@@ -1,0 +1,13 @@
+.member-list {
+  position: fixed;
+  top: 250px;
+  left: 50px;
+  list-style: none;
+  width: 100px;
+
+  .member-list-entry {
+    border: 5px solid $white;
+    border-radius: 50%;
+    width: 100px;
+  }
+}
