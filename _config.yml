@@ -1,0 +1,4 @@
+exclude: ['CNAME', 'Gemfile', 'Gemfile.lock', 'LICENSE', 'README.md']
+baseurl: '/zentrale'
+sass:
+  sass_dir: 'assets/style'

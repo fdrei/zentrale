@@ -1,0 +1,17 @@
+---
+
+---
+@import 'base';
+@import 'reset';
+
+* {
+  @include border-box();
+}
+
+body, html {
+  color: red
+}
+
+#header-top img {
+  width: 100%;
+}
