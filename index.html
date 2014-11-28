@@ -8,3 +8,14 @@ layout: default
 {% highlight ruby %}
 {{ site.github }}
 {% endhighlight %}
+
+<br>
+<br>
+
+user:
+{% for member in site.github.organization_members %}
+<p>
+  {{ member.login }}
+  <img src="{{ member.avatar_url}}">
+</p>
+{% endfor %}
