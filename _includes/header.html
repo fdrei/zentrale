@@ -1,3 +1,12 @@
-<header class="header--main">
-  <img class="header-background" src="{{ site.baseurl }}/assets/image/header_top.jpg" alt="header-background-image">
+<header class="header--main" style="background-image: url({{ site.baseurl }}/assets/image/header_top.jpg);">
+  <div class="header-wrapper">
+    <img class="header-background" src="{{ site.baseurl }}/assets/image/header_top.jpg" alt="header-background-image">
+    <ul class="slideshow">
+      {% for slide in page.slides %}
+      <li class="slide">
+        <img class="slide-image" src="{{ site.baseurl }}/assets/image/{{ slide }}" alt="{{ slide }}" />
+      </li>
+    {% endfor %}
+    </ul>
+  </div>
 </header>

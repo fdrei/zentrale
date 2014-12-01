@@ -1,6 +1,9 @@
 $white: #fff;
 $black: #000;
 
+$break-header-width: 1024px;
+$break-header-height: 768px;
+
 @mixin border-box() {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -13,6 +16,22 @@ $black: #000;
   -ms-transform:     scale($value);
   -o-transform:      scale($value);
   transform:         scale($value);
+}
+
+@mixin transform($value) {
+  -webkit-transform: $value;
+  -moz-transform:    $value;
+  -ms-transform:     $value;
+  -o-transform:      $value;
+  transform:         $value;
+}
+
+@mixin transform-origin($value) {
+  -webkit-transform-origin: $value;
+  -moz-transform-origin:    $value;
+  -ms-transform-origin:     $value;
+  -o-transform-origin:      $value;
+  transform-origin:         $value;
 }
 
 @mixin transition ($transition) {
