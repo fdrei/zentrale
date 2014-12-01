@@ -8,5 +8,9 @@
   @include border-box();
 }
 
+body {
+  overflow: hidden;
+}
+
 @import 'header';
 @import 'footer';
