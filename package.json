@@ -1,0 +1,30 @@
+{
+  "name": "zentrale",
+  "productName": "Zentrale",
+  "version": "0.0.0",
+  "description": "pure message zen",
+  "main": "index.coffee",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/fdrei/zentrale.git"
+  },
+  "keywords": [
+    "zen"
+  ],
+  "author": "fdrei",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fdrei/zentrale/issues"
+  },
+  "homepage": "https://github.com/fdrei/zentrale",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "gulp-download-atom-shell": "0.0.4",
+    "coffee-script": "^1.8.0",
+    "gulp": "^3.8.10"
+  }
+}
