@@ -1,15 +1,24 @@
 $white: #fff;
 $black: #000;
 
-$break-header-width: 1024px;
-$break-header-height: 768px;
+$window-height-small: 600px;
+$window-height-medium: 900px;
+// $window-height-small: 600px;
+// $break-header-height: 768px;
 
 $height-header-content: 100px;
 $content-background: rgba(55,59,59, 1);
 $content-background-transparent: rgba(55,59,59, 0.5);
 
 $content-padding: 20px;
-$content-header-height: 150px;
+$content-header-height-small: 50px;
+$content-header-height-medium: 100px;
+$content-header-height-large: 150px;
+
+@media screen and (min-height: 768px) {
+  $content-header-height: 150px;
+}
+
 
 // MIXINS
 
@@ -33,6 +42,14 @@ $content-header-height: 150px;
   -ms-transform:     $value;
   -o-transform:      $value;
   transform:         $value;
+}
+
+@mixin transform-style($value) {
+  -webkit-transform-style: $value;
+  -moz-transform-style:    $value;
+  -ms-transform-style:     $value;
+  -o-transform-style:      $value;
+  transform-style:         $value;
 }
 
 @mixin transform-origin($value) {

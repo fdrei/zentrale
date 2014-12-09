@@ -24,7 +24,7 @@
       background-color: transparent;
       background-repeat: no-repeat;
       background-position: center center;
-      background-attachment: fixed;
+      // background-attachment: fixed;
       @include background-size(cover);
       @include transition(background 1s ease);
 

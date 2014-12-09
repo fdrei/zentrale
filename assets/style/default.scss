@@ -15,4 +15,21 @@ body {
   background-color: $content-background;
 }
 
+.header-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: left;
+  z-index: 10;
+  @include transition(height 0.3s ease);
+  padding: $content-header-height-large/5 0;
+  height: $content-header-height-large;
+}
+
+.header-top--logo {
+  margin-left: 10px;
+}
+
 @import 'content';
+@import 'responsive';

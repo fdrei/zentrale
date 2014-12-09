@@ -1,16 +1,20 @@
-.content-wrapper {
+.content {
   padding-top: 83px;
+}
 
-  .content--header {
-    background-color: $content-background-transparent;
-    padding: $content-header-height/5 0;
-    text-align: center;
-    height: $content-header-height;
-  }
+.content--header {
+  background-color: $content-background-transparent;
+  text-align: center;
+  color: $white;
+  @include transition(height 0.3s ease);
+  padding: 20px 10px 20px $content-header-height-large*2;
+  height: $content-header-height-large;
+  font-size: 30px;
+  line-height: ($content-header-height-large/3)*2;
+}
 
-  .content {
-    background-color: $content-background;
-    padding: $content-padding $content-padding calc(100vh - #{$content-padding*2} - #{$content-header-height} + 2px) $content-padding;
-    color: $white;
-  }
+.content--body {
+  background-color: $content-background;
+  color: $white;
+  padding: $content-padding $content-padding calc(100vh - #{$content-padding*2} - #{$content-header-height-large} + 2px) $content-padding;
 }

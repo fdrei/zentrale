@@ -1,0 +1,49 @@
+// Base style for big screens -> e.g. full HD monitor
+// is found in the corresponding style file
+// drop here only parts that rely on media queries
+
+// Base style for small screens -> e.g. iPhone
+@media screen and (max-height: $window-height-small) {
+  .header-top {
+    height: $content-header-height-small;
+    padding: $content-header-height-small/10 0;
+  }
+
+  .header-top--logo {
+    height: $content-header-height-small - ($content-header-height-small/10)*2;
+  }
+
+  .content--header {
+    padding: 20px 10px 20px $content-header-height-small*2;
+    height: $content-header-height-small;
+    font-size: 20px;
+    line-height: $content-header-height-small/3;
+  }
+
+  .content--body {
+    padding: $content-padding $content-padding calc(100vh - #{$content-padding*2} - #{$content-header-height-small} + 2px) $content-padding;
+  }
+}
+
+// Base style for medium screens -> e.g. iPad
+@media screen and (min-height: $window-height-small+1) and (max-height: $window-height-medium)  {
+  .header-top {
+    height: $content-header-height-medium;
+    padding: $content-header-height-medium/10 0;
+  }
+
+  .header-top--logo {
+    height: $content-header-height-medium - ($content-header-height-medium/10)*2;
+  }
+
+  .content--header {
+    padding: 20px 10px 20px $content-header-height-medium*2;
+    height: $content-header-height-medium;
+    font-size: 25px;
+    line-height: ($content-header-height-medium/3)*2;
+  }
+
+  .content--body {
+    padding: $content-padding $content-padding calc(100vh - #{$content-padding*2} - #{$content-header-height-medium} + 2px) $content-padding;
+  }
+}
