@@ -1,0 +1,16 @@
+.content-wrapper {
+  padding-top: 83px;
+
+  .content--header {
+    background-color: $content-background-transparent;
+    padding: $content-header-height/5 0;
+    text-align: center;
+    height: $content-header-height;
+  }
+
+  .content {
+    background-color: $content-background;
+    padding: $content-padding $content-padding calc(100vh - #{$content-padding*2} - #{$content-header-height} + 2px) $content-padding;
+    color: $white;
+  }
+}

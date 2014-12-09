@@ -1,0 +1,44 @@
+.parallax {
+  @include perspective(1px);
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  .parallax-layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    &.parallax-layer--base {
+      @include transform(translateZ(0));
+      padding: 100vh 0;
+    }
+
+    &.parallax-layer--back {
+      @include transform(translateZ(-1px) scale(2));
+    }
+
+    &.parallax-layer--background-image {
+      background-color: transparent;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: fixed;
+      @include background-size(cover);
+      @include transition(background 1s ease);
+
+      .scrollinfo {
+        position: absolute;
+        color: $white;
+        text-shadow: 0 2px $black;
+        bottom: 15px;
+        left: 15px;
+        font-size: 20px;
+        > .icon {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}

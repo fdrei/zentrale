@@ -1,13 +1,4 @@
 <footer class="footer--main">
-  <ul class="list list--member">
-    {% for member in site.github.organization_members %}
-      <li class="list-entry">
-        <a class="list-link" href="{{ member.html_url }}" targe="_blank">
-          <img class="list-image" src="{{ member.avatar_url }}" alt="{{ member.login }}" />
-        </a>
-      </li>
-    {% endfor %}
-  </ul>
   <ul class="list list--owner">
     <li class="list-entry">
       <a class="list-link" href="{{ site.github.owner_url }}" targe="_blank">

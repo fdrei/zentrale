@@ -4,6 +4,15 @@ $black: #000;
 $break-header-width: 1024px;
 $break-header-height: 768px;
 
+$height-header-content: 100px;
+$content-background: rgba(55,59,59, 1);
+$content-background-transparent: rgba(55,59,59, 0.5);
+
+$content-padding: 20px;
+$content-header-height: 150px;
+
+// MIXINS
+
 @mixin border-box() {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -40,4 +49,20 @@ $break-header-height: 768px;
   -ms-transition:     $transition; 
   -o-transition:      $transition;
   transition:         $transition;
+}
+
+@mixin background-size($value) {
+  -webkit-background-size: $value;
+  -moz-background-size:    $value;
+  -ms-background-size:     $value; 
+  -o-background-size:      $value;
+  background-size:         $value;
+}
+
+@mixin perspective($value) {
+  -webkit-perspective: $value;
+  -moz-perspective:    $value;
+  -ms-perspective:     $value; 
+  -o-perspective:      $value;
+  perspective:         $value;
 }
